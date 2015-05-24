@@ -1,0 +1,202 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part --output-directory=C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part --report-file=bsf:C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part\lab2q.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA6F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part\lab2q.qsys --remove-qsys-generate-warning
+Progress: Loading Quartus_part/lab2q.qsys
+Progress: Reading input file
+Progress: Adding blender [altera_up_avalon_video_alpha_blender 14.0]
+Progress: Parameterizing module blender
+Progress: Adding character_buffer [altera_up_avalon_video_character_buffer_with_dma 14.0]
+Progress: Parameterizing module character_buffer
+Progress: Adding clk0 [clock_source 14.1]
+Progress: Parameterizing module clk0
+Progress: Adding cpu [altera_nios2_qsys 14.1]
+Progress: Parameterizing module cpu
+Progress: Adding fifo [altera_up_avalon_video_dual_clock_buffer 14.0]
+Progress: Parameterizing module fifo
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 14.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding mouse_0 [altera_up_avalon_ps2 14.0]
+Progress: Parameterizing module mouse_0
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 14.1]
+Progress: Parameterizing module onchip_mem
+Progress: Adding pixel_buffer [altera_up_avalon_video_pixel_buffer_dma 14.0]
+Progress: Parameterizing module pixel_buffer
+Progress: Adding resampler [altera_up_avalon_video_rgb_resampler 14.0]
+Progress: Parameterizing module resampler
+Progress: Adding scaler [altera_up_avalon_video_scaler 14.0]
+Progress: Parameterizing module scaler
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 14.1]
+Progress: Parameterizing module sdram_controller
+Progress: Adding sys_sdram_pll [altera_up_avalon_sys_sdram_pll 14.0]
+Progress: Parameterizing module sys_sdram_pll
+Progress: Adding sysid [altera_avalon_sysid_qsys 14.1]
+Progress: Parameterizing module sysid
+Progress: Adding vga_controller [altera_up_avalon_video_vga_controller 14.0]
+Progress: Parameterizing module vga_controller
+Progress: Adding video_clk [altera_up_avalon_video_pll 14.0]
+Progress: Parameterizing module video_clk
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: lab2q.character_buffer: Character Resolution: 80 x 60
+Warning: lab2q.cpu: Nios II Classic cores are now superseded by improved Gen 2 cores.
+Info: lab2q.resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: lab2q.scaler: Change in Resolution: 640 x 480 -> 320 x 480
+Info: lab2q.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: lab2q.sysid: Time stamp will be automatically updated when this component is generated.
+Info: lab2q.vga_controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part --output-directory=C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part\synthesis --file-set=QUARTUS_SYNTH --report-file=html:C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part\lab2q.html --report-file=sopcinfo:C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part\lab2q.sopcinfo --report-file=cmp:C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part\lab2q.cmp --report-file=qip:C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part\synthesis\lab2q.qip --report-file=svd:C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part\synthesis\lab2q.svd --report-file=regmap:C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part\synthesis\lab2q.regmap --report-file=xml:C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part\lab2q.xml --report-file=debuginfo:C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part\synthesis\lab2q.debuginfo --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA6F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:\Users\Kevin\Documents\HDL48\LAB2\Quartus_part\lab2q.qsys --remove-qsys-generate-warning --language=VHDL
+Progress: Loading Quartus_part/lab2q.qsys
+Progress: Reading input file
+Progress: Adding blender [altera_up_avalon_video_alpha_blender 14.0]
+Progress: Parameterizing module blender
+Progress: Adding character_buffer [altera_up_avalon_video_character_buffer_with_dma 14.0]
+Progress: Parameterizing module character_buffer
+Progress: Adding clk0 [clock_source 14.1]
+Progress: Parameterizing module clk0
+Progress: Adding cpu [altera_nios2_qsys 14.1]
+Progress: Parameterizing module cpu
+Progress: Adding fifo [altera_up_avalon_video_dual_clock_buffer 14.0]
+Progress: Parameterizing module fifo
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 14.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding mouse_0 [altera_up_avalon_ps2 14.0]
+Progress: Parameterizing module mouse_0
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 14.1]
+Progress: Parameterizing module onchip_mem
+Progress: Adding pixel_buffer [altera_up_avalon_video_pixel_buffer_dma 14.0]
+Progress: Parameterizing module pixel_buffer
+Progress: Adding resampler [altera_up_avalon_video_rgb_resampler 14.0]
+Progress: Parameterizing module resampler
+Progress: Adding scaler [altera_up_avalon_video_scaler 14.0]
+Progress: Parameterizing module scaler
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 14.1]
+Progress: Parameterizing module sdram_controller
+Progress: Adding sys_sdram_pll [altera_up_avalon_sys_sdram_pll 14.0]
+Progress: Parameterizing module sys_sdram_pll
+Progress: Adding sysid [altera_avalon_sysid_qsys 14.1]
+Progress: Parameterizing module sysid
+Progress: Adding vga_controller [altera_up_avalon_video_vga_controller 14.0]
+Progress: Parameterizing module vga_controller
+Progress: Adding video_clk [altera_up_avalon_video_pll 14.0]
+Progress: Parameterizing module video_clk
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: lab2q.character_buffer: Character Resolution: 80 x 60
+Warning: lab2q.cpu: Nios II Classic cores are now superseded by improved Gen 2 cores.
+Info: lab2q.resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: lab2q.scaler: Change in Resolution: 640 x 480 -> 320 x 480
+Info: lab2q.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: lab2q.sysid: Time stamp will be automatically updated when this component is generated.
+Info: lab2q.vga_controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Info: lab2q: Generating lab2q "lab2q" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master pixel_buffer.avalon_pixel_dma_master and slave onchip_mem.s1 because the master has readdatavalid signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master pixel_buffer.avalon_pixel_dma_master and slave onchip_mem.s1 because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master pixel_buffer.avalon_pixel_dma_master and slave onchip_mem.s1 because the master has address signal 32 bit wide, but the slave is 16 bit wide.
+Info: Interconnect is inserted between master pixel_buffer.avalon_pixel_dma_master and slave onchip_mem.s1 because the master has lock signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master pixel_buffer.avalon_pixel_dma_master and slave onchip_mem.s1 because the master has read signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master pixel_buffer.avalon_pixel_dma_master and slave onchip_mem.s1 because the master has readdata signal 16 bit wide, but the slave is 32 bit wide.
+Info: blender: Starting Generation of the Alpha Blender
+Info: blender: "lab2q" instantiated altera_up_avalon_video_alpha_blender "blender"
+Info: character_buffer: Starting Generation of Character Buffer
+Info: character_buffer: "lab2q" instantiated altera_up_avalon_video_character_buffer_with_dma "character_buffer"
+Info: cpu: Starting RTL generation for module 'lab2q_cpu'
+Info: cpu:   Generation command is [exec D:/altera/14.1/quartus/bin64/eperlcmd.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=lab2q_cpu --dir=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0003_cpu_gen/ --quartus_bindir=D:/altera/14.1/quartus/bin64 --verilog --config=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0003_cpu_gen//lab2q_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2015.05.24 13:51:34 (*) Starting Nios II generation
+Info: cpu: # 2015.05.24 13:51:34 (*)   Checking for plaintext license.
+Info: cpu: # 2015.05.24 13:51:36 (*)   Couldn't query license setup in Quartus directory D:/altera/14.1/quartus/bin64
+Info: cpu: # 2015.05.24 13:51:36 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2015.05.24 13:51:36 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2015.05.24 13:51:36 (*)   Plaintext license not found.
+Info: cpu: # 2015.05.24 13:51:36 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2015.05.24 13:51:39 (*)   Couldn't query license setup in Quartus directory D:/altera/14.1/quartus/bin64
+Info: cpu: # 2015.05.24 13:51:39 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2015.05.24 13:51:39 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2015.05.24 13:51:39 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: cpu: # 2015.05.24 13:51:39 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2015.05.24 13:51:39 (*)   Creating all objects for CPU
+Info: cpu: # 2015.05.24 13:51:40 (*)     Pipeline frontend
+Info: cpu: # 2015.05.24 13:51:42 (*)   Generating RTL from CPU objects
+Info: cpu: # 2015.05.24 13:51:46 (*)   Creating encrypted RTL
+Info: cpu: # 2015.05.24 13:51:46 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'lab2q_cpu'
+Info: cpu: "lab2q" instantiated altera_nios2_qsys "cpu"
+Info: fifo: Starting Generation of the Dual Clock Buffer
+Info: fifo: "lab2q" instantiated altera_up_avalon_video_dual_clock_buffer "fifo"
+Info: jtag_uart: Starting RTL generation for module 'lab2q_jtag_uart'
+Info: jtag_uart:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=lab2q_jtag_uart --dir=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0005_jtag_uart_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0005_jtag_uart_gen//lab2q_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'lab2q_jtag_uart'
+Info: jtag_uart: "lab2q" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: mouse_0: Starting Generation of PS2 Controller
+Info: mouse_0: "lab2q" instantiated altera_up_avalon_ps2 "mouse_0"
+Info: onchip_mem: Starting RTL generation for module 'lab2q_onchip_mem'
+Info: onchip_mem:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=lab2q_onchip_mem --dir=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0007_onchip_mem_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0007_onchip_mem_gen//lab2q_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_mem: Done RTL generation for module 'lab2q_onchip_mem'
+Info: onchip_mem: "lab2q" instantiated altera_avalon_onchip_memory2 "onchip_mem"
+Info: pixel_buffer: Starting Generation of VGA Pixel Buffer
+Info: pixel_buffer: "lab2q" instantiated altera_up_avalon_video_pixel_buffer_dma "pixel_buffer"
+Info: resampler: Starting Generation of Video RGB Resampler
+Info: resampler: "lab2q" instantiated altera_up_avalon_video_rgb_resampler "resampler"
+Info: scaler: Starting Generation of Video Scaler
+Info: scaler: "lab2q" instantiated altera_up_avalon_video_scaler "scaler"
+Info: sdram_controller: Starting RTL generation for module 'lab2q_sdram_controller'
+Info: sdram_controller:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=lab2q_sdram_controller --dir=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0011_sdram_controller_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0011_sdram_controller_gen//lab2q_sdram_controller_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram_controller: Done RTL generation for module 'lab2q_sdram_controller'
+Info: sdram_controller: "lab2q" instantiated altera_avalon_new_sdram_controller "sdram_controller"
+Info: sys_sdram_pll: "lab2q" instantiated altera_up_avalon_sys_sdram_pll "sys_sdram_pll"
+Info: sysid: "lab2q" instantiated altera_avalon_sysid_qsys "sysid"
+Info: vga_controller: Starting Generation of VGA Controller
+Info: vga_controller: "lab2q" instantiated altera_up_avalon_video_vga_controller "vga_controller"
+Info: video_clk: "lab2q" instantiated altera_up_avalon_video_pll "video_clk"
+Info: mm_interconnect_0: "lab2q" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: mm_interconnect_1: "lab2q" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: irq_mapper: "lab2q" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "lab2q" instantiated altera_reset_controller "rst_controller"
+Info: sys_pll: "sys_sdram_pll" instantiated altera_pll "sys_pll"
+Info: reset_from_locked: "sys_sdram_pll" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: video_pll: "video_clk" instantiated altera_pll "video_pll"
+Info: pixel_buffer_avalon_pixel_dma_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "pixel_buffer_avalon_pixel_dma_master_translator"
+Info: onchip_mem_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "onchip_mem_s1_translator"
+Info: pixel_buffer_avalon_pixel_dma_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "pixel_buffer_avalon_pixel_dma_master_agent"
+Info: onchip_mem_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "onchip_mem_s1_agent"
+Info: onchip_mem_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "onchip_mem_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: onchip_mem_s1_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "onchip_mem_s1_cmd_width_adapter"
+Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_1" instantiated altera_merlin_router "router_003"
+Info: router_008: "mm_interconnect_1" instantiated altera_merlin_router "router_008"
+Info: router_009: "mm_interconnect_1" instantiated altera_merlin_router "router_009"
+Info: cpu_instruction_master_limiter: "mm_interconnect_1" instantiated altera_merlin_traffic_limiter "cpu_instruction_master_limiter"
+Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: character_buffer_avalon_char_buffer_slave_burst_adapter: "mm_interconnect_1" instantiated altera_merlin_burst_adapter "character_buffer_avalon_char_buffer_slave_burst_adapter"
+Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_006: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux_006"
+Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_006: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux_006"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: lab2q: Done "lab2q" with 50 modules, 94 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
