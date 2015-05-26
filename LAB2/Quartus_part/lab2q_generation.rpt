@@ -107,36 +107,31 @@ Info: blender: "lab2q" instantiated altera_up_avalon_video_alpha_blender "blende
 Info: character_buffer: Starting Generation of Character Buffer
 Info: character_buffer: "lab2q" instantiated altera_up_avalon_video_character_buffer_with_dma "character_buffer"
 Info: cpu: Starting RTL generation for module 'lab2q_cpu'
-Info: cpu:   Generation command is [exec D:/altera/14.1/quartus/bin64/eperlcmd.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=lab2q_cpu --dir=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0003_cpu_gen/ --quartus_bindir=D:/altera/14.1/quartus/bin64 --verilog --config=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0003_cpu_gen//lab2q_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2015.05.24 13:51:34 (*) Starting Nios II generation
-Info: cpu: # 2015.05.24 13:51:34 (*)   Checking for plaintext license.
-Info: cpu: # 2015.05.24 13:51:36 (*)   Couldn't query license setup in Quartus directory D:/altera/14.1/quartus/bin64
-Info: cpu: # 2015.05.24 13:51:36 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info: cpu: # 2015.05.24 13:51:36 (*)   LM_LICENSE_FILE environment variable is empty
-Info: cpu: # 2015.05.24 13:51:36 (*)   Plaintext license not found.
-Info: cpu: # 2015.05.24 13:51:36 (*)   Checking for encrypted license (non-evaluation).
-Info: cpu: # 2015.05.24 13:51:39 (*)   Couldn't query license setup in Quartus directory D:/altera/14.1/quartus/bin64
-Info: cpu: # 2015.05.24 13:51:39 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info: cpu: # 2015.05.24 13:51:39 (*)   LM_LICENSE_FILE environment variable is empty
-Info: cpu: # 2015.05.24 13:51:39 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
-Info: cpu: # 2015.05.24 13:51:39 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2015.05.24 13:51:39 (*)   Creating all objects for CPU
-Info: cpu: # 2015.05.24 13:51:40 (*)     Pipeline frontend
-Info: cpu: # 2015.05.24 13:51:42 (*)   Generating RTL from CPU objects
-Info: cpu: # 2015.05.24 13:51:46 (*)   Creating encrypted RTL
-Info: cpu: # 2015.05.24 13:51:46 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec D:/altera/14.1/quartus/bin64/eperlcmd.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=lab2q_cpu --dir=C:/Users/Kevin/AppData/Local/Temp/alt6579_5951839031186716237.dir/0003_cpu_gen/ --quartus_bindir=D:/altera/14.1/quartus/bin64 --verilog --config=C:/Users/Kevin/AppData/Local/Temp/alt6579_5951839031186716237.dir/0003_cpu_gen//lab2q_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2015.05.24 17:16:56 (*) Starting Nios II generation
+Info: cpu: # 2015.05.24 17:16:56 (*)   Checking for plaintext license.
+Info: cpu: # 2015.05.24 17:16:59 (*)   Couldn't query license setup in Quartus directory D:/altera/14.1/quartus/bin64
+Info: cpu: # 2015.05.24 17:16:59 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2015.05.24 17:16:59 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2015.05.24 17:16:59 (*)   Plaintext license not found.
+Info: cpu: # 2015.05.24 17:16:59 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2015.05.24 17:16:59 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2015.05.24 17:16:59 (*)   Creating all objects for CPU
+Info: cpu: # 2015.05.24 17:17:01 (*)   Generating RTL from CPU objects
+Info: cpu: # 2015.05.24 17:17:01 (*)   Creating plain-text RTL
+Info: cpu: # 2015.05.24 17:17:04 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'lab2q_cpu'
 Info: cpu: "lab2q" instantiated altera_nios2_qsys "cpu"
 Info: fifo: Starting Generation of the Dual Clock Buffer
 Info: fifo: "lab2q" instantiated altera_up_avalon_video_dual_clock_buffer "fifo"
 Info: jtag_uart: Starting RTL generation for module 'lab2q_jtag_uart'
-Info: jtag_uart:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=lab2q_jtag_uart --dir=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0005_jtag_uart_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0005_jtag_uart_gen//lab2q_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=lab2q_jtag_uart --dir=C:/Users/Kevin/AppData/Local/Temp/alt6579_5951839031186716237.dir/0005_jtag_uart_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/Kevin/AppData/Local/Temp/alt6579_5951839031186716237.dir/0005_jtag_uart_gen//lab2q_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart: Done RTL generation for module 'lab2q_jtag_uart'
 Info: jtag_uart: "lab2q" instantiated altera_avalon_jtag_uart "jtag_uart"
 Info: mouse_0: Starting Generation of PS2 Controller
 Info: mouse_0: "lab2q" instantiated altera_up_avalon_ps2 "mouse_0"
 Info: onchip_mem: Starting RTL generation for module 'lab2q_onchip_mem'
-Info: onchip_mem:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=lab2q_onchip_mem --dir=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0007_onchip_mem_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0007_onchip_mem_gen//lab2q_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_mem:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=lab2q_onchip_mem --dir=C:/Users/Kevin/AppData/Local/Temp/alt6579_5951839031186716237.dir/0007_onchip_mem_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/Kevin/AppData/Local/Temp/alt6579_5951839031186716237.dir/0007_onchip_mem_gen//lab2q_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_mem: Done RTL generation for module 'lab2q_onchip_mem'
 Info: onchip_mem: "lab2q" instantiated altera_avalon_onchip_memory2 "onchip_mem"
 Info: pixel_buffer: Starting Generation of VGA Pixel Buffer
@@ -146,7 +141,7 @@ Info: resampler: "lab2q" instantiated altera_up_avalon_video_rgb_resampler "resa
 Info: scaler: Starting Generation of Video Scaler
 Info: scaler: "lab2q" instantiated altera_up_avalon_video_scaler "scaler"
 Info: sdram_controller: Starting RTL generation for module 'lab2q_sdram_controller'
-Info: sdram_controller:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=lab2q_sdram_controller --dir=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0011_sdram_controller_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/Kevin/AppData/Local/Temp/alt6579_3177664124424676536.dir/0011_sdram_controller_gen//lab2q_sdram_controller_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram_controller:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=lab2q_sdram_controller --dir=C:/Users/Kevin/AppData/Local/Temp/alt6579_5951839031186716237.dir/0011_sdram_controller_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/Kevin/AppData/Local/Temp/alt6579_5951839031186716237.dir/0011_sdram_controller_gen//lab2q_sdram_controller_component_configuration.pl  --do_build_sim=0  ]
 Info: sdram_controller: Done RTL generation for module 'lab2q_sdram_controller'
 Info: sdram_controller: "lab2q" instantiated altera_avalon_new_sdram_controller "sdram_controller"
 Info: sys_sdram_pll: "lab2q" instantiated altera_up_avalon_sys_sdram_pll "sys_sdram_pll"
@@ -180,11 +175,8 @@ Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_
 Info: router_003: "mm_interconnect_1" instantiated altera_merlin_router "router_003"
 Info: router_008: "mm_interconnect_1" instantiated altera_merlin_router "router_008"
 Info: router_009: "mm_interconnect_1" instantiated altera_merlin_router "router_009"
-Info: cpu_instruction_master_limiter: "mm_interconnect_1" instantiated altera_merlin_traffic_limiter "cpu_instruction_master_limiter"
-Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_avalon_sc_fifo.v
 Info: character_buffer_avalon_char_buffer_slave_burst_adapter: "mm_interconnect_1" instantiated altera_merlin_burst_adapter "character_buffer_avalon_char_buffer_slave_burst_adapter"
 Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_merlin_address_alignment.sv
-Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_avalon_st_pipeline_base.v
 Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
 Info: cmd_demux_001: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux_001"
 Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
@@ -192,11 +184,10 @@ Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/su
 Info: cmd_mux_006: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux_006"
 Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
-Info: rsp_demux_006: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux_006"
 Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
 Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_mux_001: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux_001"
 Info: Reusing file C:/Users/Kevin/Documents/HDL48/LAB2/Quartus_part/synthesis/submodules/altera_merlin_arbitrator.sv
-Info: lab2q: Done "lab2q" with 50 modules, 94 files
+Info: lab2q: Done "lab2q" with 48 modules, 88 files
 Info: ip-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

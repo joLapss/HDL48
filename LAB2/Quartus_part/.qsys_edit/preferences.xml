@@ -10,7 +10,7 @@
   </columns>
  </systemtable>
  <library
-   expandedCategories="Library,Project,Library/University Program/Audio &amp; Video,Library/University Program/Audio &amp; Video/Video,Library/University Program" />
+   expandedCategories="Library/Processors and Peripherals,Project,Library/Processors and Peripherals/Embedded Processors,Library" />
  <window width="1920" height="1032" x="0" y="0" />
  <hdlexample language="VHDL" />
  <generation

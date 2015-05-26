@@ -1,29 +1,46 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
-preplace inst lab2q.mouse_0 -pg 1 -lvl 5 -y 120
-preplace inst lab2q.video_pll_0 -pg 1 -lvl 2 -y 250
+preplace inst lab2q.mouse_0 -pg 1 -lvl 6 -y 120
+preplace inst lab2q.character_buffer -pg 1 -lvl 5 -y 170
+preplace inst lab2q.blender -pg 1 -lvl 8 -y 610
+preplace inst lab2q.vga_controller -pg 1 -lvl 10 -y 490
 preplace inst lab2q.sys_sdram_pll.reset_from_locked -pg 1
 preplace inst lab2q.sys_sdram_pll.sys_pll -pg 1
-preplace inst lab2q.video_pll_0.video_pll -pg 1
 preplace inst lab2q.sys_sdram_pll -pg 1 -lvl 3 -y 270
-preplace inst lab2q.onchip_mem -pg 1 -lvl 5 -y 360
+preplace inst lab2q.pixel_buffer -pg 1 -lvl 5 -y 590
+preplace inst lab2q.onchip_mem -pg 1 -lvl 6 -y 550
 preplace inst lab2q -pg 1 -lvl 1 -y 40 -regy -20
-preplace inst lab2q.video_pll_0.reset_from_locked -pg 1
+preplace inst lab2q.video_clk -pg 1 -lvl 2 -y 170
 preplace inst lab2q.clk0 -pg 1 -lvl 1 -y 250
-preplace inst lab2q.pixel_buffer_dma -pg 1 -lvl 4 -y 370
-preplace inst lab2q.jtag_uart -pg 1 -lvl 5 -y 250
+preplace inst lab2q.video_clk.reset_from_locked -pg 1
+preplace inst lab2q.jtag_uart -pg 1 -lvl 6 -y 370
 preplace inst lab2q.cpu -pg 1 -lvl 4 -y 210
-preplace inst lab2q.sysid -pg 1 -lvl 5 -y 30
-preplace inst lab2q.sdram_controller -pg 1 -lvl 5 -y 450
-preplace netloc POINT_TO_POINT<net_container>lab2q</net_container>(MASTER)pixel_buffer_dma.avalon_pixel_dma_master,(SLAVE)onchip_mem.s1) 1 4 1 1220
-preplace netloc FAN_OUT<net_container>lab2q</net_container>(SLAVE)cpu.clk,(SLAVE)mouse_0.clk,(SLAVE)sysid.clk,(MASTER)sys_sdram_pll.sys_clk,(SLAVE)onchip_mem.clk1,(SLAVE)jtag_uart.clk) 1 3 2 840 200 1240
-preplace netloc FAN_OUT<net_container>lab2q</net_container>(MASTER)cpu.d_irq,(SLAVE)jtag_uart.irq,(SLAVE)mouse_0.interrupt) 1 4 1 1280
+preplace inst lab2q.video_clk.video_pll -pg 1
+preplace inst lab2q.sysid -pg 1 -lvl 6 -y 30
+preplace inst lab2q.sdram_controller -pg 1 -lvl 6 -y 650
+preplace inst lab2q.scaler -pg 1 -lvl 7 -y 550
+preplace inst lab2q.resampler -pg 1 -lvl 6 -y 250
+preplace inst lab2q.fifo -pg 1 -lvl 9 -y 690
+preplace netloc EXPORT<net_container>lab2q</net_container>(SLAVE)lab2q.vga_out,(SLAVE)vga_controller.external_interface) 1 0 10 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ
+preplace netloc EXPORT<net_container>lab2q</net_container>(SLAVE)mouse_0.external_interface,(SLAVE)lab2q.mouse) 1 0 6 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 NJ
+preplace netloc POINT_TO_POINT<net_container>lab2q</net_container>(SLAVE)blender.avalon_background_sink,(MASTER)scaler.avalon_scaler_source) 1 7 1 2330
+preplace netloc FAN_OUT<net_container>lab2q</net_container>(SLAVE)video_clk.ref_clk,(MASTER)clk0.clk,(SLAVE)sys_sdram_pll.ref_clk) 1 1 2 290 280 N
+preplace netloc FAN_OUT<net_container>lab2q</net_container>(SLAVE)fifo.reset_stream_in,(SLAVE)scaler.reset,(SLAVE)cpu.reset_n,(MASTER)sys_sdram_pll.reset_source,(SLAVE)resampler.reset,(SLAVE)onchip_mem.reset1,(SLAVE)jtag_uart.reset,(SLAVE)mouse_0.reset,(SLAVE)pixel_buffer.reset,(SLAVE)character_buffer.reset,(SLAVE)blender.reset) 1 3 6 810 160 1180 280 1730 340 2070 680 2310 740 NJ
+preplace netloc POINT_TO_POINT<net_container>lab2q</net_container>(MASTER)resampler.avalon_rgb_source,(SLAVE)scaler.avalon_scaler_sink) 1 6 1 2090
+preplace netloc POINT_TO_POINT<net_container>lab2q</net_container>(SLAVE)blender.avalon_foreground_sink,(MASTER)character_buffer.avalon_char_source) 1 5 3 1710 640 NJ 640 NJ
+preplace netloc EXPORT<net_container>lab2q</net_container>(SLAVE)lab2q.sram,(SLAVE)sdram_controller.wire) 1 0 6 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ
+preplace netloc FAN_OUT<net_container>lab2q</net_container>(SLAVE)jtag_uart.irq,(MASTER)cpu.d_irq,(SLAVE)mouse_0.interrupt) 1 4 2 1120 680 1790
+preplace netloc POINT_TO_POINT<net_container>lab2q</net_container>(SLAVE)resampler.avalon_rgb_sink,(MASTER)pixel_buffer.avalon_pixel_source) 1 5 1 1810
+preplace netloc EXPORT<net_container>lab2q</net_container>(SLAVE)lab2q.clk,(SLAVE)clk0.clk_in) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>lab2q</net_container>(SLAVE)pixel_buffer.clk,(SLAVE)blender.clk,(SLAVE)mouse_0.clk,(SLAVE)character_buffer.clk,(SLAVE)jtag_uart.clk,(MASTER)sys_sdram_pll.sys_clk,(SLAVE)scaler.clk,(SLAVE)onchip_mem.clk1,(SLAVE)fifo.clock_stream_in,(SLAVE)resampler.clk,(SLAVE)sdram_controller.clk,(SLAVE)cpu.clk,(SLAVE)sysid.clk) 1 3 6 830 180 1140 700 1750 360 2050 660 2330 720 NJ
 preplace netloc EXPORT<net_container>lab2q</net_container>(SLAVE)lab2q.reset,(SLAVE)clk0.clk_in_reset) 1 0 1 NJ
-preplace netloc INTERCONNECT<net_container>lab2q</net_container>(SLAVE)pixel_buffer_dma.avalon_control_slave,(SLAVE)jtag_uart.avalon_jtag_slave,(MASTER)cpu.instruction_master,(SLAVE)sdram_controller.s1,(MASTER)cpu.data_master,(SLAVE)cpu.jtag_debug_module) 1 3 2 860 340 1200
-preplace netloc FAN_OUT<net_container>lab2q</net_container>(MASTER)clk0.clk,(SLAVE)video_pll_0.ref_clk,(SLAVE)sys_sdram_pll.ref_clk) 1 1 2 280 360 560
-preplace netloc EXPORT<net_container>lab2q</net_container>(SLAVE)clk0.clk_in,(SLAVE)lab2q.clk) 1 0 1 NJ
-preplace netloc INTERCONNECT<net_container>lab2q</net_container>(SLAVE)mouse_0.reset,(MASTER)sys_sdram_pll.reset_source,(SLAVE)sysid.reset,(MASTER)video_pll_0.reset_source,(SLAVE)jtag_uart.reset,(SLAVE)cpu.reset_n,(SLAVE)video_pll_0.ref_reset,(SLAVE)onchip_mem.reset1,(MASTER)clk0.clk_reset,(SLAVE)sys_sdram_pll.ref_reset,(SLAVE)sdram_controller.reset) 1 1 4 260 380 540 380 820 360 1260
-preplace netloc POINT_TO_POINT<net_container>lab2q</net_container>(MASTER)video_pll_0.video_in_clk,(SLAVE)pixel_buffer_dma.clk) 1 2 2 520 400 NJ
-preplace netloc POINT_TO_POINT<net_container>lab2q</net_container>(SLAVE)sdram_controller.clk,(MASTER)sys_sdram_pll.sdram_clk) 1 3 2 800 460 NJ
-levelinfo -pg 1 0 50 1490
-levelinfo -hier lab2q 60 90 360 640 890 1330 1480
+preplace netloc FAN_OUT<net_container>lab2q</net_container>(SLAVE)sdram_controller.reset,(SLAVE)video_clk.ref_reset,(MASTER)clk0.clk_reset,(SLAVE)sys_sdram_pll.ref_reset,(SLAVE)sysid.reset) 1 1 5 270 300 550 110 NJ 110 NJ 110 1830
+preplace netloc POINT_TO_POINT<net_container>lab2q</net_container>(MASTER)blender.avalon_blended_source,(SLAVE)fifo.avalon_dc_buffer_sink) 1 8 1 2710
+preplace netloc EXPORT<net_container>lab2q</net_container>(MASTER)lab2q.clk_sdram,(MASTER)sys_sdram_pll.sdram_clk) 1 3 8 NJ 340 NJ 340 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ
+preplace netloc POINT_TO_POINT<net_container>lab2q</net_container>(MASTER)pixel_buffer.avalon_pixel_dma_master,(SLAVE)onchip_mem.s1) 1 5 1 N
+preplace netloc POINT_TO_POINT<net_container>lab2q</net_container>(SLAVE)vga_controller.avalon_vga_sink,(MASTER)fifo.avalon_dc_buffer_source) 1 9 1 3040
+preplace netloc INTERCONNECT<net_container>lab2q</net_container>(SLAVE)character_buffer.avalon_char_buffer_slave,(SLAVE)character_buffer.avalon_char_control_slave,(SLAVE)pixel_buffer.avalon_control_slave,(SLAVE)sdram_controller.s1,(SLAVE)mouse_0.avalon_ps2_slave,(MASTER)cpu.instruction_master,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)sysid.control_slave,(SLAVE)cpu.jtag_debug_module,(MASTER)cpu.data_master) 1 3 3 850 200 1160 720 1770
+preplace netloc FAN_OUT<net_container>lab2q</net_container>(SLAVE)fifo.reset_stream_out,(MASTER)video_clk.reset_source,(SLAVE)vga_controller.reset) 1 2 8 NJ 380 NJ 380 NJ 380 NJ 500 NJ 500 NJ 500 2690 560 NJ
+preplace netloc FAN_OUT<net_container>lab2q</net_container>(SLAVE)fifo.clock_stream_out,(MASTER)video_clk.vga_clk,(SLAVE)vga_controller.clk) 1 2 8 NJ 400 NJ 400 NJ 400 NJ 520 NJ 520 NJ 520 2730 520 NJ
+levelinfo -pg 1 0 60 3310
+levelinfo -hier lab2q 70 100 370 650 900 1340 1880 2120 2360 2760 3070 3220

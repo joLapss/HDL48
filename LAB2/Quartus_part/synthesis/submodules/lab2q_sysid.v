@@ -36,7 +36,7 @@ module lab2q_sysid (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1432489879 : 1;
+  assign readdata = address ? 1432502202 : 1;
 
 endmodule
 
