@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="lab2q" kind="lab2q" version="1.0" fabric="QSYS">
  <!-- Format version 14.1 186 (Future versions may contain additional information.) -->
- <!-- 2015.05.26.19:43:48 -->
+ <!-- 2015.05.31.14:13:43 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1432683827</value>
+  <value>1433096022</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -6917,7 +6917,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.SIZE_VALUE</name>
-   <value>256000</value>
+   <value>262144</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.WRITABLE</name>
@@ -7017,7 +7017,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="memorySize">
    <type>long</type>
-   <value>256000</value>
+   <value>262144</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -7277,7 +7277,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="addressSpan">
     <type>java.math.BigInteger</type>
-    <value>256000</value>
+    <value>262144</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -7365,7 +7365,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="explicitAddressSpan">
     <type>java.math.BigInteger</type>
-    <value>256000</value>
+    <value>262144</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -8169,7 +8169,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s1</slaveName>
     <name>onchip_mem.s1</name>
     <baseAddress>0</baseAddress>
-    <span>256000</span>
+    <span>262144</span>
    </memoryBlock>
   </interface>
   <interface name="avalon_control_slave" kind="avalon_slave" version="14.1">
@@ -11150,7 +11150,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1432683827</value>
+   <value>1433096022</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -11170,7 +11170,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1432683827</value>
+   <value>1433096022</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -11186,7 +11186,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1432683827</value>
+   <value>1433096022</value>
    <derived>false</derived>
    <enabled>false</enabled>
    <visible>false</visible>
