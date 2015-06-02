@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="lab2q" kind="lab2q" version="1.0" fabric="QSYS">
  <!-- Format version 14.1 186 (Future versions may contain additional information.) -->
- <!-- 2015.05.31.14:13:43 -->
+ <!-- 2015.05.31.19:08:54 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1433096022</value>
+  <value>1433113734</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -104,7 +104,7 @@
 the requested settings for a module instance. -->
   <parameter name="mode">
    <type>java.lang.String</type>
-   <value>Simple</value>
+   <value>Normal</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -3276,7 +3276,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='sdram_controller.s1' start='0x4000000' end='0x8000000' /><slave name='character_buffer.avalon_char_buffer_slave' start='0x8000000' end='0x8002000' /><slave name='cpu.jtag_debug_module' start='0x8002800' end='0x8003000' /><slave name='pixel_buffer.avalon_control_slave' start='0x8003000' end='0x8003010' /><slave name='sysid.control_slave' start='0x8003010' end='0x8003018' /><slave name='mouse_0.avalon_ps2_slave' start='0x8003018' end='0x8003020' /><slave name='character_buffer.avalon_char_control_slave' start='0x8003020' end='0x8003028' /><slave name='jtag_uart.avalon_jtag_slave' start='0x8003028' end='0x8003030' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x40000' /><slave name='sdram_controller.s1' start='0x4000000' end='0x8000000' /><slave name='character_buffer.avalon_char_buffer_slave' start='0x8000000' end='0x8002000' /><slave name='cpu.jtag_debug_module' start='0x8002800' end='0x8003000' /><slave name='pixel_buffer.avalon_control_slave' start='0x8003000' end='0x8003010' /><slave name='sysid.control_slave' start='0x8003010' end='0x8003018' /><slave name='mouse_0.avalon_ps2_slave' start='0x8003018' end='0x8003020' /><slave name='jtag_uart.avalon_jtag_slave' start='0x8003020' end='0x8003028' /><slave name='character_buffer.avalon_char_control_slave' start='0x8003028' end='0x8003030' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3867,7 +3867,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>character_buffer</moduleName>
     <slaveName>avalon_char_control_slave</slaveName>
     <name>character_buffer.avalon_char_control_slave</name>
-    <baseAddress>134230048</baseAddress>
+    <baseAddress>134230056</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
@@ -3883,7 +3883,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>jtag_uart</moduleName>
     <slaveName>avalon_jtag_slave</slaveName>
     <name>jtag_uart.avalon_jtag_slave</name>
-    <baseAddress>134230056</baseAddress>
+    <baseAddress>134230048</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
@@ -3917,6 +3917,14 @@ parameters are a RESULT of the module parameters. -->
     <name>sdram_controller.s1</name>
     <baseAddress>67108864</baseAddress>
     <span>67108864</span>
+   </memoryBlock>
+   <memoryBlock>
+    <isBridge>false</isBridge>
+    <moduleName>onchip_mem</moduleName>
+    <slaveName>s1</slaveName>
+    <name>onchip_mem.s1</name>
+    <baseAddress>0</baseAddress>
+    <span>262144</span>
    </memoryBlock>
   </interface>
   <interface name="instruction_master" kind="avalon_master" version="14.1">
@@ -7701,7 +7709,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="image_width">
    <type>int</type>
-   <value>640</value>
+   <value>320</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -7709,7 +7717,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="image_height">
    <type>int</type>
-   <value>480</value>
+   <value>240</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9212,7 +9220,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="width_scaling">
    <type>java.lang.String</type>
-   <value>0.5</value>
+   <value>2</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9220,7 +9228,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="height_scaling">
    <type>java.lang.String</type>
-   <value>1</value>
+   <value>2</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9228,7 +9236,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="width_in">
    <type>int</type>
-   <value>640</value>
+   <value>320</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9236,7 +9244,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="height_in">
    <type>int</type>
-   <value>480</value>
+   <value>240</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9244,7 +9252,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="width_out">
    <type>int</type>
-   <value>320</value>
+   <value>640</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -10959,6 +10967,12 @@ parameters are a RESULT of the module parameters. -->
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
+    <moduleName>sdram_controller</moduleName>
+    <slaveName>clk</slaveName>
+    <name>sdram_controller.clk</name>
+   </clockDomainMember>
+   <clockDomainMember>
+    <isBridge>false</isBridge>
     <moduleName>pixel_buffer</moduleName>
     <slaveName>clk</slaveName>
     <name>pixel_buffer.clk</name>
@@ -10977,21 +10991,15 @@ parameters are a RESULT of the module parameters. -->
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>blender</moduleName>
-    <slaveName>clk</slaveName>
-    <name>blender.clk</name>
-   </clockDomainMember>
-   <clockDomainMember>
-    <isBridge>false</isBridge>
     <moduleName>character_buffer</moduleName>
     <slaveName>clk</slaveName>
     <name>character_buffer.clk</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>sdram_controller</moduleName>
+    <moduleName>blender</moduleName>
     <slaveName>clk</slaveName>
-    <name>sdram_controller.clk</name>
+    <name>blender.clk</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
@@ -11150,7 +11158,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1433096022</value>
+   <value>1433113734</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -11170,7 +11178,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1433096022</value>
+   <value>1433113734</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -11186,7 +11194,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1433096022</value>
+   <value>1433113734</value>
    <derived>false</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -12100,7 +12108,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="video_in_clk_en">
    <type>boolean</type>
-   <value>true</value>
+   <value>false</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -12110,7 +12118,7 @@ the requested settings for a module instance. -->
    <type>java.lang.String</type>
    <value>5MP Digital Camera</value>
    <derived>false</derived>
-   <enabled>true</enabled>
+   <enabled>false</enabled>
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
@@ -12285,75 +12293,6 @@ parameters are a RESULT of the module parameters. -->
     <direction>Input</direction>
     <width>1</width>
     <role>reset</role>
-   </port>
-  </interface>
-  <interface name="video_in_clk" kind="clock_source" version="14.1">
-   <!-- The connection points exposed by a module instance for the
-particular module parameters. Connection points and their
-parameters are a RESULT of the module parameters. -->
-   <parameter name="associatedDirectClock">
-    <type>java.lang.String</type>
-    <value></value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="clockRate">
-    <type>long</type>
-    <value>25000000</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="clockRateKnown">
-    <type>boolean</type>
-    <value>true</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="externallyDriven">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="ptfSchematicName">
-    <type>java.lang.String</type>
-    <value></value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="deviceFamily">
-    <type>java.lang.String</type>
-    <value>UNKNOWN</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="generateLegacySim">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <type>clock</type>
-   <isStart>true</isStart>
-   <port>
-    <name>video_in_clk_clk</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>clk</role>
    </port>
   </interface>
   <interface name="vga_clk" kind="clock_source" version="14.1">
@@ -12617,7 +12556,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x08003020</value>
+   <value>0x08003028</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -12719,7 +12658,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x08003028</value>
+   <value>0x08003020</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -12956,6 +12895,57 @@ parameters are a RESULT of the module parameters. -->
   <startModule>cpu</startModule>
   <startConnectionPoint>data_master</startConnectionPoint>
   <endModule>sdram_controller</endModule>
+  <endConnectionPoint>s1</endConnectionPoint>
+ </connection>
+ <connection
+   name="cpu.data_master/onchip_mem.s1"
+   kind="avalon"
+   version="14.1"
+   start="cpu.data_master"
+   end="onchip_mem.s1">
+  <parameter name="arbitrationPriority">
+   <type>int</type>
+   <value>1</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="baseAddress">
+   <type>java.math.BigInteger</type>
+   <value>0x0000</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="defaultConnection">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>cpu</startModule>
+  <startConnectionPoint>data_master</startConnectionPoint>
+  <endModule>onchip_mem</endModule>
   <endConnectionPoint>s1</endConnectionPoint>
  </connection>
  <connection
@@ -13385,6 +13375,33 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
+   name="sys_sdram_pll.sys_clk/sdram_controller.clk"
+   kind="clock"
+   version="14.1"
+   start="sys_sdram_pll.sys_clk"
+   end="sdram_controller.clk">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>sys_sdram_pll</startModule>
+  <startConnectionPoint>sys_clk</startConnectionPoint>
+  <endModule>sdram_controller</endModule>
+  <endConnectionPoint>clk</endConnectionPoint>
+ </connection>
+ <connection
    name="sys_sdram_pll.sys_clk/pixel_buffer.clk"
    kind="clock"
    version="14.1"
@@ -13466,33 +13483,6 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
-   name="sys_sdram_pll.sys_clk/blender.clk"
-   kind="clock"
-   version="14.1"
-   start="sys_sdram_pll.sys_clk"
-   end="blender.clk">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>sys_sdram_pll</startModule>
-  <startConnectionPoint>sys_clk</startConnectionPoint>
-  <endModule>blender</endModule>
-  <endConnectionPoint>clk</endConnectionPoint>
- </connection>
- <connection
    name="sys_sdram_pll.sys_clk/character_buffer.clk"
    kind="clock"
    version="14.1"
@@ -13520,11 +13510,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
-   name="sys_sdram_pll.sys_clk/sdram_controller.clk"
+   name="sys_sdram_pll.sys_clk/blender.clk"
    kind="clock"
    version="14.1"
    start="sys_sdram_pll.sys_clk"
-   end="sdram_controller.clk">
+   end="blender.clk">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -13543,7 +13533,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>sys_sdram_pll</startModule>
   <startConnectionPoint>sys_clk</startConnectionPoint>
-  <endModule>sdram_controller</endModule>
+  <endModule>blender</endModule>
   <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
@@ -13887,11 +13877,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>reset</endConnectionPoint>
  </connection>
  <connection
-   name="sys_sdram_pll.reset_source/pixel_buffer.reset"
+   name="sys_sdram_pll.reset_source/vga_controller.reset"
    kind="reset"
    version="14.1"
    start="sys_sdram_pll.reset_source"
-   end="pixel_buffer.reset">
+   end="vga_controller.reset">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -13910,61 +13900,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>sys_sdram_pll</startModule>
   <startConnectionPoint>reset_source</startConnectionPoint>
-  <endModule>pixel_buffer</endModule>
-  <endConnectionPoint>reset</endConnectionPoint>
- </connection>
- <connection
-   name="sys_sdram_pll.reset_source/resampler.reset"
-   kind="reset"
-   version="14.1"
-   start="sys_sdram_pll.reset_source"
-   end="resampler.reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>sys_sdram_pll</startModule>
-  <startConnectionPoint>reset_source</startConnectionPoint>
-  <endModule>resampler</endModule>
-  <endConnectionPoint>reset</endConnectionPoint>
- </connection>
- <connection
-   name="sys_sdram_pll.reset_source/scaler.reset"
-   kind="reset"
-   version="14.1"
-   start="sys_sdram_pll.reset_source"
-   end="scaler.reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>sys_sdram_pll</startModule>
-  <startConnectionPoint>reset_source</startConnectionPoint>
-  <endModule>scaler</endModule>
+  <endModule>vga_controller</endModule>
   <endConnectionPoint>reset</endConnectionPoint>
  </connection>
  <connection
@@ -14022,11 +13958,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>reset</endConnectionPoint>
  </connection>
  <connection
-   name="video_clk.reset_source/vga_controller.reset"
+   name="sys_sdram_pll.reset_source/scaler.reset"
    kind="reset"
    version="14.1"
-   start="video_clk.reset_source"
-   end="vga_controller.reset">
+   start="sys_sdram_pll.reset_source"
+   end="scaler.reset">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -14043,9 +13979,63 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>video_clk</startModule>
+  <startModule>sys_sdram_pll</startModule>
   <startConnectionPoint>reset_source</startConnectionPoint>
-  <endModule>vga_controller</endModule>
+  <endModule>scaler</endModule>
+  <endConnectionPoint>reset</endConnectionPoint>
+ </connection>
+ <connection
+   name="sys_sdram_pll.reset_source/resampler.reset"
+   kind="reset"
+   version="14.1"
+   start="sys_sdram_pll.reset_source"
+   end="resampler.reset">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>sys_sdram_pll</startModule>
+  <startConnectionPoint>reset_source</startConnectionPoint>
+  <endModule>resampler</endModule>
+  <endConnectionPoint>reset</endConnectionPoint>
+ </connection>
+ <connection
+   name="sys_sdram_pll.reset_source/pixel_buffer.reset"
+   kind="reset"
+   version="14.1"
+   start="sys_sdram_pll.reset_source"
+   end="pixel_buffer.reset">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>sys_sdram_pll</startModule>
+  <startConnectionPoint>reset_source</startConnectionPoint>
+  <endModule>pixel_buffer</endModule>
   <endConnectionPoint>reset</endConnectionPoint>
  </connection>
  <connection
@@ -14130,10 +14120,10 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>reset_stream_in</endConnectionPoint>
  </connection>
  <connection
-   name="video_clk.reset_source/fifo.reset_stream_out"
+   name="sys_sdram_pll.reset_source/fifo.reset_stream_out"
    kind="reset"
    version="14.1"
-   start="video_clk.reset_source"
+   start="sys_sdram_pll.reset_source"
    end="fifo.reset_stream_out">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
@@ -14151,7 +14141,7 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>video_clk</startModule>
+  <startModule>sys_sdram_pll</startModule>
   <startConnectionPoint>reset_source</startConnectionPoint>
   <endModule>fifo</endModule>
   <endConnectionPoint>reset_stream_out</endConnectionPoint>
@@ -14381,7 +14371,7 @@ parameters are a RESULT of the module parameters. -->
   <version>14.0</version>
  </plugin>
  <plugin>
-  <instanceCount>4</instanceCount>
+  <instanceCount>3</instanceCount>
   <name>clock_source</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
@@ -14413,7 +14403,7 @@ parameters are a RESULT of the module parameters. -->
   <version>14.0</version>
  </plugin>
  <plugin>
-  <instanceCount>11</instanceCount>
+  <instanceCount>12</instanceCount>
   <name>avalon</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
